@@ -1,0 +1,465 @@
+@font-face {
+    font-family: Courgette;
+    src: url("Courgette-Regular.ttf");
+}
+@font-face {
+    font-family: Playball;
+    src: url("Playball-Regular.ttf");
+}
+@font-face {
+    font-family: Playfair;
+    src: url("Playfair-Italic-VariableFont_opsz,wdth,wght.ttf");
+    src: url("Playfair-VariableFont_opsz,wdth,wght.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background: #0d2d62;
+    height: 70px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    box-shadow: 10px 0 20px black;
+    z-index: 5;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+nav ul li{
+    margin-top: 1.5%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Playball, serif;
+    font-size: 1.5rem;
+    padding: 5px 8px;
+}
+nav ul li a:hover{
+    border-radius: 5px;
+    background: white;
+    color: black;
+}
+main{
+    margin-top: 100px;
+}
+#intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#info-about-institute{
+    width: 50%;
+}
+#info-about-institute h1{
+    color: #153c27;
+    font-size: 2.2rem;
+}
+hr{
+    margin: 20px 0;
+    width: 100px;
+    height: 5px;
+    background: #0d2d62;
+}
+#institute-Name{
+    margin: 10px 0;
+}
+#about-institute{
+    font-family: Playfair, sans-serif;
+    font-size: 1.3rem;
+    color: black;
+    text-align: justify !important;
+}
+#intro-image img{
+    padding: 10px;
+    height: 350px;
+    width: 450px;
+}
+#principal{
+    background: #0d2d62;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0;
+    color: white;
+}
+#message-of-principal-and-name{
+    width: 70%;
+}
+#message-of-principal{
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: Playfair,'Times New Roman', sans-serif;
+    text-align: justify !important;
+    width: 90%;
+}
+#name-of-principal{
+    text-align: right;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 40px;
+    font-family: 'Times New Roman', sans-serif;
+}
+#position{
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Times New Roman', sans-serif;
+}
+#principal-img img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 30px;
+    box-shadow: 15px 10px 20px black;
+}
+#read-more a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#admission{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+#studies{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#institute-studies{
+    font-size: 3rem;
+    text-align: center;
+    font-family: Playfair, sans-serif;
+}
+.level-of-studies{
+    width: 30%;
+    background: papayawhip;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column-reverse;
+}
+.level-of-studies img{
+    width: 100%;
+}
+.level-of-studies p{
+    color: #b80924;
+    margin: 30px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: Playfair, sans-serif;
+}
+#location-contact{
+    width: 900px;
+}
+#map-contact{
+    margin: auto;
+    display: flex;
+    width: 100%;
+}
+#map{
+    width: 50%;
+    height: 30rem;
+    z-index: -1;
+}
+#contacts{
+    width: 50%;
+    padding: 30px;
+}
+#contacts p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b80924;
+}
+#contacts-line{
+    margin: 10px 0;
+    width: 500px;
+    height: 1px;
+    background-color: rgb(128, 128, 128);
+    padding: 0;
+}
+#contacts-line div{
+    margin: 0;
+    width: 65px;
+    height: 1px;
+    background: #b80924;
+}
+#links-to-contact{
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    flex-direction: column;
+}
+#links-to-contact a{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+#links-to-contact img{
+    margin: 10px 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding: 30px 0;
+}
+#footer img{
+    width: 130px;
+}
+#footer p{
+    font-size: 20px;
+    color: rgb(128, 128, 128);
+}
+@media (max-device-width: 1005px) {
+    nav{
+        height: 75px;
+    }
+    nav ul li a {
+        font-size: 1.7rem;
+    }
+    #intro {
+        flex-direction: column-reverse;
+    }
+
+    #info-about-institute {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    #intro-image img {
+        height: 30rem;
+        width: 30rem;
+    }
+    #info-about-institute h1 {
+        font-size: 2.5rem;
+    }
+    #about-institute {
+        font-size: 2rem;
+    }
+    #principal {
+        padding: 50px 5px;
+        font-weight: normal;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    #message-of-principal{
+        width: 105%;
+        font-size: 1.5rem;
+    }
+    #principal-img {
+        display: flex;
+        width: 60%;
+        justify-content: center;
+    }
+    #principal-img img {
+        width: 60%;
+        height: 50%;
+        margin-bottom: 40px;
+    }
+    #studies {
+        /*flex-direction: column;*/
+    }
+    #institute-studies {
+        font-size: 4rem;
+    }
+    .level-of-studies {
+        width: 40%;
+    }
+    .level-of-studies h1{
+        font-size: 3rem;
+    }
+    .level-of-studies p {
+        font-size: 2.5rem;
+    }
+    #map-contact{
+        align-items: center;
+        flex-flow: column-reverse;
+    }
+    #map{
+        width: 100%;
+    }
+    #contacts{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contacts p{
+        font-size: 3rem;
+    }
+    #links-to-contact{
+
+    }
+    #links-to-contact img{
+        height: 50px;
+        width: 60px;
+    }
+    #links-to-contact a {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        margin: 15px 3px;
+    }
+    #footer{
+        flex-direction: column-reverse;
+    }
+    #footer img {
+        width: 350px;
+    }
+    #footer p {
+        font-size: 40px;
+        text-align: center;
+    }
+}
+@media (max-device-width: 920px) {
+    nav{
+        height: 70px;
+    }
+    nav ul li a {
+        font-size: 1.6rem;
+    }
+    #intro-image img {
+        height: 30rem;
+        width: 30rem;
+    }
+    #info-about-institute h1 {
+        font-size: 2rem;
+    }
+    #about-institute {
+        font-size: 1.7rem;
+    }
+    #message-of-principal{
+        font-size: 1.5rem;
+    }
+    #principal-img img {
+        width: 40%;
+        margin-bottom: 40px;
+    }
+    #name-of-principal{
+        font-size: 2rem;
+    }
+    #position {
+        font-size: 2rem;
+    }
+    #institute-studies {
+        font-size: 3rem;
+    }
+    .level-of-studies{
+        width: 40%;
+    }
+    .level-of-studies p {
+        font-size: 2rem;
+    }
+    #contacts p{
+        font-size: 2rem;
+    }
+    #links-to-contact a {
+        font-size: 25px;
+    }
+}
+@media (max-device-width: 820px) {
+    nav{
+        height: 80px;
+    }
+    nav ul li a {
+        font-size: 2rem;
+    }
+    #intro-image img {
+        height: 40rem;
+        width: 40rem;
+    }
+    #info-about-institute h1 {
+        font-size: 2.5rem;
+    }
+    #about-institute {
+        font-size: 1.7rem;
+    }
+    #message-of-principal{
+        font-size: 1.5rem;
+    }
+    #principal-img img {
+        width: 60%;
+        height: 30%;
+        margin-bottom: 40px;
+    }
+    #name-of-principal{
+        font-size: 3rem;
+        text-align: center;
+    }
+    #position {
+        font-size: 2rem;
+    }
+    #institute-studies {
+        font-size: 4rem;
+    }
+    .level-of-studies h1{
+        font-size: 3rem;
+    }
+    .level-of-studies p {
+        font-size: 2.5rem;
+    }
+    #contacts p{
+        font-size: 2.5rem;
+    }
+    #links-to-contact a {
+        font-size: 30px;
+    }
+    #links-to-contact img {
+        height: 35px;
+        width: 45px;
+    }
+    #footer p {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+@media (max-device-width: 450px) {
+    #studies{
+        flex-direction: column;
+    }
+    .level-of-studies{
+        width: 80%;
+    }
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:600px;
+    height:400px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:600px;
+    height:400px;
+}
+.gmap_iframe {
+    width:600px!important;
+    height:400px!important;
+}

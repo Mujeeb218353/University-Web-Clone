@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sindh Madressa Tul Islam University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Sign In</a></li>
+        </ul>
+    </nav>
+    <main>
+<!--        <section id="add-pictures">-->
+<!--            <input type="file" id="imageInput" accept="image/*" multiple>-->
+<!--            <button onclick="addImages()">Add Images</button>-->
+<!--            <div id="picContainer">-->
+<!--                &lt;!&ndash; The images will be dynamically added here &ndash;&gt;-->
+<!--            </div>-->
+<!--        </section>-->
+        <section id="intro">
+            <div id="info-about-institute">
+                <h1>Welcome To</h1>
+                <h1 id="institute-Name"></h1>
+                <hr>
+                <p id="about-institute"></p>
+            </div>
+            <div  id="intro-image"></div>
+        </section>
+        <section id="principal">
+            <div id="message-of-principal-and-name">
+                <div><blockquote id="message-of-principal"></blockquote></div>
+                <div id="name-of-principal"></div>
+                <div id="position"></div>
+                <div id="read-more"><a href="#">Read more...</a></div>
+            </div>
+            <div id="principal-img"></div>
+        </section>
+        <section id="admission">
+            <h1 id="institute-studies">Studying at <span id="institute-name" ></span></h1>
+            <hr>
+            <div id="studies">
+                <div class="level-of-studies" id="level-of-studies-pri">
+                    <p id="level-of-studies-pri-heading"></p>
+                </div>
+                <div class="level-of-studies" id="level-of-studies-mid">
+                    <p id="level-of-studies-mid-heading"></p>
+                </div>
+                <div class="level-of-studies" id="level-of-studies-sec">
+                    <p id="level-of-studies-sec-heading"></p>
+                </div>
+            </div>
+        </section>
+        <section id="map-contact">
+            <div id="map">
+<!--            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>-->
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Sindh Madrassa tul Islam University &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        </iframe>
+                        <a href="https://connectionsgame.org/">Connections Puzzle</a>
+                    </div>
+                </div>
+            </div>
+            <div id="contacts">
+                <p>Contact Us</p>
+                <div id="contacts-line"><div></div></div>
+                <div id="links-to-contact">
+                    <a href="tel:(021) 111-11-1885"><img src="call.png" alt="phone logo">(021) 111-11-1885</a>
+                    <a href="https://www.google.com/maps?q=Hasrat+Mohani+Road%2C+Karachi-74000%2C+Pakistan" target="_blank">
+                        <img src="pin.png" alt="location logo">
+                        Hasrat Mohani Road, Karachi-74000, Pakistan
+                    </a>
+                    <a href="mailto:info@smiu.edu.pk"><img src="email.png" alt="mail logo">info@smiu.edu.pk</a>
+                    <a href="https://www.youtube.com/smiukhi"><img src="youtube.png" alt="youtube logo" id="youtube">youtube.com/smiukhi</a>
+                    <a href="https://www.facebook.com/smiu.edu.pk"><img src="facebook.png" alt="facebook logo" >facebook.com/smiu.edu.pk</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2023. All Rights Reserved by Sindh Madressatul Islam University. Privacy Policy</p>
+    </footer>
+</body>
+<script src="./admin.js"></script>
+</html>
